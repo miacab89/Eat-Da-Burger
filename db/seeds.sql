@@ -1,8 +1,5 @@
 USE eatdaburger_db; 
 
-INSERT INTO cats (name) VALUES ('Meeses');
-INSERT INTO cats (name) VALUES ('Bobbi');
-INSERT INTO cats (name, sleepy) VALUES ('Sylvester', true);
-INSERT INTO cats (name, sleepy) VALUES ('Marilyn Manson', true);
-INSERT INTO cats (name, sleepy) VALUES ('Joe Biden', true);
-INSERT INTO cats (name) VALUES ('Owens');
+INSERT INTO burgers (burger_name) VALUE ("Impossible Burger");
+INSERT INTO burgers (burger_name, devour) VALUE ("Ultimate Cheeseburger", true);
+INSERT INTO burgers (burger_name) VALUE ("Whatachicken");
