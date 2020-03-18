@@ -1,0 +1,33 @@
+{
+  "name": "eat-da-burger",
+  "version": "1.0.0",
+  "description": "Eat-Da-Burger-App",
+  "main": "server.js",
+  "scripts": {
+    "test": "node.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miacab89/Eat-Da-Burger.git"
+  },
+  "keywords": [
+    "handlebars",
+    "express",
+    "mysql",
+    "node.js"
+  ],
+  "author": "Mia Cabrera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miacab89/Eat-Da-Burger/issues"
+  },
+  "homepage": "https://github.com/miacab89/Eat-Da-Burger#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "gitignore": "^0.6.0",
+    "mysql": "^2.18.1"
+  }
+}
