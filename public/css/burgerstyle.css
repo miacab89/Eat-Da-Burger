@@ -1,0 +1,18 @@
+body {
+    background-color: #fc3268;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white; 
+    text-align: center;
+    align-items: center;
+}
+
+h1, h3 {
+    color: #a01f3e; 
+}
+
+.addBurger, .devour {
+    background-color: #a01f3e;
+    border: #fc3268; 
+    color: white; 
+}
+

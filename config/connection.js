@@ -1,17 +1,26 @@
 // Set up MySQL connection.
 var mysql = require("mysql");
+require('dotenv').config();
+let connection;
 
-if(process.env.JAWSDB_URL) {
-  connection = mysql.createConnection(process.env.JAWSDB_URL);
-} else {
-   connection = mysql.createConnection({
+var source = {
+  localhost: {
     host: "localhost",
     port: 3306,
     user: "root",
-    password: "password1234",
+    password: process.env.DB_PASS,
     database: "eatdaburger_db"
-  });
 }
+};
+
+
+// Creating connection
+if (process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  connection = mysql.createConnection(source.localhost);
+}
+
 // Make connection.
 connection.connect(function(err) {
   if (err) {

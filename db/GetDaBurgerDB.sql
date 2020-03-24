@@ -6,11 +6,14 @@ USE eatdaburger_db;
 
 CREATE TABLE burgers (
 id INT NOT NULL AUTO_INCREMENT,
-burger_name VARCHAR (255) NULL, 
+burger_name VARCHAR (255), 
 devoured BOOLEAN DEFAULT false,
 PRIMARY KEY (id)
 ); 
 
-INSERT INTO burgers (burger_name) VALUE ("Impossible Burger");
+INSERT INTO burgers (burger_name, devoured) VALUE ("Impossible Burger", true);
 INSERT INTO burgers (burger_name, devoured) VALUE ("Ultimate Cheeseburger", true);
-INSERT INTO burgers (burger_name) VALUE ("Whatachicken"); 
+INSERT INTO burgers (burger_name, devoured) VALUE ("Whatachicken", false); 
+
+
+SELECT * FROM dk0uh8mbj82nx7bm.burgers;
